@@ -7,4 +7,5 @@
 - yarn
 - yarn start
 
-## Front end de teste:
+## Projeto em reactjs que consome essa api:
+[Projeto React](https://github.com/jairochaves2/socket.io-react)
