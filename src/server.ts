@@ -14,10 +14,11 @@ io.on("connection", (client: SocketIo.Socket) => {
   // users.set(client, client.id);
   // console.table(users);
   client.on("levanta.mao", (event) => {
-    console.table(event);
     users.set(event.sala, event);
+    console.table(users);
     console.log(users);
     client.broadcast.emit("muda.mao", Array.from(users));
+    client.emit("connection", Array.from(users));
   });
   client.emit("connection", Array.from(users));
 });
