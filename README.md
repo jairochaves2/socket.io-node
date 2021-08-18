@@ -1,4 +1,4 @@
-# socket.io-node
+# Projeto para estudo do socketio com o nodejs
 ## Observações do projeto:
 - Construído com typescript
 - Socket.io
